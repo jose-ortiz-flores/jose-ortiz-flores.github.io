@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Jose Ortiz Flores — Aerospace, Mechanical, and Electrical Engineer focused on GNC for air and space, dynamics, and teaching." name="description"/>
+<title>Jose Ortiz Flores | GNC for Air &amp; Space</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet">
+</link></head>
+<body>
+<header class="site-header">
+<div aria-hidden="true" class="brand-spacer"></div>
+<nav aria-label="Primary navigation" class="nav">
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="teaching.html">Teaching</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section class="hero section hero-no-visual" id="home">
+<div class="hero-copy reveal">
+<p class="eyebrow">AEROSPACE, MECHANICAL, AND ELECTRICAL ENGINEER</p>
+<h1>Jose Ortiz Flores</h1>
+<h2>GNC for Air &amp; Space · Dynamics · Teaching</h2>
+<p class="hero-text">Engineer and educator focused on guidance, navigation and control, vehicle dynamics, atmospheric flight, reentry, and physics-based simulation across air and space applications.</p>
+<div class="hero-actions">
+<a class="button primary" href="#projects">View Projects</a>
+<a class="button secondary" href="assets/CV_JOF_Aug_2026.pdf" rel="noopener" target="_blank">View CV</a>
+</div>
+<div class="hero-links">
+<a href="https://www.linkedin.com/in/jose-ortiz-flores-11a485203" rel="noopener" target="_blank">LinkedIn ↗</a>
+</div>
+</div>
+
+</section>
+<section class="section narrow" id="about">
+<div class="section-heading reveal">
+<p class="eyebrow">ABOUT</p>
+<h2>Engineering across air, space, dynamics and control.</h2>
+</div>
+<div class="about-grid reveal">
+<p>My work and interests span spacecraft attitude dynamics, orbital mechanics, atmospheric flight, atmospheric reentry, estimation, guidance and control, and flight simulation. I enjoy translating mathematical models into simulations that can be tested, visualized, and connected to practical aerospace problems.</p>
+<p>Alongside engineering work, I teach technical aerospace courses. That experience has strengthened how I structure complex problems, communicate technical ideas, and move between theory and implementation.</p>
+</div>
+</section>
+<section class="section" id="projects">
+<div class="projects-heading-row reveal">
+<div class="section-heading">
+<p class="eyebrow">SELECTED PROJECTS</p>
+<h2>Technical work, simulations and engineering projects.</h2>
+<p>Use the arrows or swipe to explore. Each card opens into a deeper technical case study.</p>
+</div>
+<div aria-label="Project carousel controls" class="carousel-controls">
+<button aria-label="Previous projects" class="carousel-button" id="projects-prev" type="button">←</button>
+<button aria-label="Next projects" class="carousel-button" id="projects-next" type="button">→</button>
+</div>
+</div>
+<div aria-label="Selected projects" class="project-carousel reveal" id="project-carousel" tabindex="0">
+<article class="project-card">
+<a aria-label="Open spacecraft attitude control project" class="project-preview detumble-preview" href="projects/spacecraft-adcs.html">
+<svg aria-label="Satellite detumbling and settling into nadir pointing" role="img" viewbox="0 0 600 360">
+<defs>
+<radialgradient cx="50%" cy="35%" id="earthGlow" r="65%"><stop offset="0" stop-color="#3f8ac7"></stop><stop offset="1" stop-color="#102b45"></stop></radialgradient>
+</defs>
+<circle cx="300" cy="398" fill="url(#earthGlow)" opacity=".92" r="210"></circle>
+<path d="M160 205 Q300 135 440 205" fill="none" stroke="currentColor" stroke-dasharray="6 8" stroke-opacity=".25"></path>
+<g class="detumble-sat">
+<rect class="sat-core" height="34" rx="3" width="48" x="-24" y="-17"></rect>
+<rect class="sat-panel" height="20" width="58" x="-88" y="-10"></rect><rect class="sat-panel" height="20" width="58" x="30" y="-10"></rect>
+<line class="nadir-boom" x1="0" x2="0" y1="17" y2="50"></line>
+<circle class="nadir-dot" cx="0" cy="56" r="4"></circle>
+</g>
+<path class="nadir-line" d="M300 208 L300 294"></path>
+<text x="28" y="34">DETUMBLE → NADIR POINTING</text>
+<text class="nadir-label" x="320" y="284">NADIR</text>
+</svg>
+</a>
+<div class="project-body">
+<div class="project-meta">SPACECRAFT · ADCS</div>
+<h3>Attitude Control &amp; Momentum Management</h3>
+<p>Spacecraft attitude simulation using reaction wheels for regulation, magnetorquers for momentum dumping, and nadir-pointing with respect to the orbit frame.</p>
+<div class="tags"><span>MATLAB</span><span>6-DOF</span><span>Reaction Wheels</span><span>MTQ</span></div>
+<a class="project-link" href="projects/spacecraft-adcs.html">View project →</a>
+</div>
+</article>
+<article class="project-card">
+<a aria-label="Open relative navigation project" class="project-preview rendezvous-preview" href="projects/relative-navigation.html">
+<svg aria-label="Animated relative rendezvous trajectory" role="img" viewbox="0 0 600 360">
+<defs><pattern height="30" id="rvGrid" patternunits="userSpaceOnUse" width="30"><path d="M30 0H0V30" fill="none" stroke="currentColor" stroke-opacity=".09"></path></pattern></defs>
+<rect fill="url(#rvGrid)" height="360" width="600"></rect>
+<circle class="chief" cx="300" cy="180" r="20"></circle>
+<path class="trajectory" d="M72 265 C160 72 430 315 300 180"></path>
+<circle class="deputy" r="8"><animatemotion dur="5s" path="M72 265 C160 72 430 315 300 180" repeatcount="indefinite"></animatemotion></circle>
+<circle class="range-ring" cx="300" cy="180" r="60"></circle><circle class="range-ring" cx="300" cy="180" r="108"></circle>
+<text x="320" y="172">CHIEF</text><text x="28" y="34">RELATIVE NAVIGATION</text>
+</svg>
+</a>
+<div class="project-body">
+<div class="project-meta">GNC · ESTIMATION</div>
+<h3>Relative Navigation &amp; Rendezvous</h3>
+<p>Range and camera measurements fused with an EKF, paired with constrained model predictive control for deputy-to-chief rendezvous.</p>
+<div class="tags"><span>Python</span><span>EKF</span><span>MPC</span><span>HCW</span></div>
+<a class="project-link" href="projects/relative-navigation.html">View project →</a>
+</div>
+</article>
+<article class="project-card">
+<a aria-label="Open atmospheric reentry project" class="project-preview reentry-preview" href="projects/reentry-guidance.html">
+<svg aria-label="Blunt capsule entering heat-shield-first through the atmosphere with a glowing plasma wake" role="img" viewbox="0 0 600 360">
+<circle class="planet-disc" cx="300" cy="430" r="260"></circle>
+<circle class="atmosphere-ring" cx="300" cy="430" r="292"></circle>
+<path class="entry-path" d="M40 78 C160 102 210 118 260 165 C302 205 330 235 355 268"></path>
+<path class="corridor-edge" d="M65 46 C175 70 250 95 315 160"></path><path class="corridor-edge" d="M57 112 C160 128 221 145 276 198"></path>
+<g class="reentry-vehicle">
+<g class="capsule-shape" transform="rotate(270)">
+<path d="M-11 -13 Q1 -18 12 -10 L18 6 Q4 18 -12 13 L-18 4 Z"></path>
+<path class="capsule-shield" d="M-18 4 Q1 18 18 6"></path>
+<line class="capsule-panel" x1="-8" x2="10" y1="-9" y2="-6"></line>
+</g>
+<animatemotion dur="5.2s" path="M40 78 C160 102 210 118 260 165 C302 205 330 235 355 268" repeatcount="indefinite" rotate="auto"></animatemotion>
+</g>
+<text x="28" y="32">ENTRY CORRIDOR + GUIDANCE</text>
+</svg>
+</a>
+<div class="project-body">
+<div class="project-meta">REENTRY · OPTIMAL CONTROL</div>
+<h3>Atmospheric Reentry Guidance &amp; Entry Corridor</h3>
+<p>Entry-corridor analysis and constrained atmospheric trajectory optimization, combined with Purdue research on reentry guidance using sequential convex programming and trust-region strategies.</p>
+<div class="tags"><span>Reentry</span><span>SCP</span><span>Trajectory Optimization</span><span>MATLAB</span></div>
+<a class="project-link" href="projects/reentry-guidance.html">View project →</a>
+</div>
+</article>
+<article class="project-card">
+<a aria-label="Open halo orbit relative control project" class="project-preview halo-preview" href="projects/halo-relative-control.html">
+<svg aria-label="Two spacecraft maintaining relative motion in a Sun-Earth L2 halo orbit" role="img" viewbox="0 0 600 360">
+<circle class="sun-dot" cx="92" cy="180" r="38"></circle><circle class="earth-dot" cx="458" cy="180" r="10"></circle>
+<circle class="l2-dot" cx="500" cy="180" r="5"></circle><text x="511" y="176">L2</text>
+<ellipse class="halo-orbit" cx="500" cy="180" rx="48" ry="108" transform="rotate(-8 500 180)"></ellipse>
+<g class="halo-chief"><circle cx="0" cy="0" r="8"></circle><animatemotion dur="7s" path="M500 72 C548 72 548 288 500 288 C452 288 452 72 500 72" repeatcount="indefinite"></animatemotion></g><g class="halo-deputy"><circle cx="0" cy="0" r="6"></circle><animatemotion begin="-.16s" dur="7s" path="M500 85 C541 85 541 275 500 275 C459 275 459 85 500 85" repeatcount="indefinite"></animatemotion></g>
+<text x="28" y="32">SUN–EARTH L2 FORMATION CONTROL</text>
+</svg>
+</a>
+<div class="project-body">
+<div class="project-meta">CR3BP · FORMATION FLYING</div>
+<h3>Station Keeping &amp; Formation Flying at Sun–Earth L2</h3>
+<p>Lyapunov-based station keeping and chief–deputy formation control in nonlinear Sun–Earth L2 dynamics.</p>
+<div class="tags"><span>CR3BP</span><span>Lyapunov Control</span><span>Halo Orbit</span><span>MATLAB</span></div>
+<a class="project-link" href="projects/halo-relative-control.html">View project →</a>
+</div>
+</article>
+<article class="project-card">
+<a aria-label="Open solar sail optimal control project" class="project-preview solar-sail-preview" href="projects/solar-sail-optimal-control.html">
+<svg aria-label="Solar sail driven by yellow solar-radiation rays toward a near-Earth asteroid" role="img" viewbox="0 0 600 360">
+<g class="solar-ray-field">
+<g class="solar-rays ray-copy-a">
+<path d="M0 62 C150 66 310 72 600 84"></path>
+<path d="M0 112 C160 116 330 120 600 126"></path>
+<path d="M0 162 C170 162 350 163 600 166"></path>
+<path d="M0 212 C160 208 340 204 600 196"></path>
+<path d="M0 262 C150 252 315 240 600 218"></path>
+<path d="M0 310 C145 296 310 276 600 244"></path>
+</g>
+<g class="solar-rays ray-copy-b" transform="translate(-600 0)">
+<path d="M0 62 C150 66 310 72 600 84"></path>
+<path d="M0 112 C160 116 330 120 600 126"></path>
+<path d="M0 162 C170 162 350 163 600 166"></path>
+<path d="M0 212 C160 208 340 204 600 196"></path>
+<path d="M0 262 C150 252 315 240 600 218"></path>
+<path d="M0 310 C145 296 310 276 600 244"></path>
+</g>
+</g>
+<path class="solar-nominal" d="M72 276 C168 192 226 125 300 95 C379 63 436 76 488 98"></path>
+<path class="solar-recovery" d="M72 276 C168 192 226 125 300 95 C332 82 351 113 364 151 C382 192 432 128 488 98"></path>
+<path class="solar-safe" d="M326 110 C344 120 355 134 364 151"></path>
+<g class="nea-asteroid" transform="translate(510 96)"><path d="M-21 -8 L-11 -20 L6 -17 L20 -6 L15 12 L3 20 L-15 14 L-22 3 Z"></path><circle cx="-8" cy="-5" r="3.5"></circle><circle cx="8" cy="6" r="3"></circle><circle cx="3" cy="-10" r="2"></circle></g>
+<text class="nea-label" x="486" y="139">NEA</text>
+<g class="solar-sail">
+<path d="M-18 0 L0 -18 L18 0 L0 18 Z"></path>
+<line x1="-13" x2="13" y1="-13" y2="13"></line><line x1="13" x2="-13" y1="-13" y2="13"></line>
+</g>
+<text x="28" y="32">SOLAR-SAIL OPTIMAL CONTROL</text>
+<text class="solar-label" x="370" y="205">SAFE MODE + RECOVERY</text>
+</svg>
+</a>
+<div class="project-body">
+<div class="project-meta">OPTIMAL CONTROL · TRAJECTORY RECOVERY</div>
+<h3>Solar Sail Trajectory Optimization &amp; Missed-Thrust Recovery</h3>
+<p>Minimum-time solar-sail asteroid rendezvous using indirect optimal control, followed by trajectory replanning after an 8-day safe-mode event.</p>
+<div class="tags"><span>Indirect Optimal Control</span><span>Solar Sail</span><span>Safe Mode</span><span>Replanning</span></div>
+<a class="project-link" href="projects/solar-sail-optimal-control.html">View project →</a>
+</div>
+</article>
+<article class="project-card">
+<a aria-label="Open aerogravity assist project" class="project-preview aga-preview" href="projects/aerogravity-assist.html">
+<svg aria-label="Aerogravity-assist flyby curving around Venus and skimming its upper atmosphere" role="img" viewbox="0 0 600 360">
+<defs><marker id="agaArrow" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L0,6 L7,3 z"></path></marker></defs>
+<circle class="venus-disc" cx="330" cy="220" r="83"></circle>
+<circle class="venus-atm" cx="330" cy="220" r="101"></circle>
+<path class="aga-guide-path" d="M32 292 C120 291 188 274 234 238 C275 206 287 161 321 132 C364 95 430 80 568 88"></path>
+<path class="aga-main-path" d="M32 292 C120 291 188 274 234 238 C275 206 287 161 321 132 C364 95 430 80 568 88" marker-end="url(#agaArrow)"></path>
+<path class="aga-atmospheric" d="M247 228 C278 197 289 158 321 132 C342 114 368 102 395 95"></path>
+<circle class="periapsis-mark" cx="321" cy="132" r="5"></circle>
+<g class="waverider"><path d="M-15 -8 L16 0 L-15 8 L-7 0 Z"></path></g>
+<text x="28" y="32">VENUS AEROGRAVITY ASSIST</text>
+<text class="aga-label" x="397" y="119">AGA</text>
+<text class="atmosphere-label" x="336" y="155">UPPER ATMOSPHERE</text>
+</svg>
+</a>
+<div class="project-body">
+<div class="project-meta">HYPERSONICS · TRAJECTORY OPTIMIZATION</div>
+<h3>Trajectory Optimization for Aerogravity Assist</h3>
+<p>Optimal Venus atmospheric trajectory for a waverider, maximizing departure velocity by reducing drag losses while exploiting aerodynamic lift.</p>
+<div class="tags"><span>Optimal Control</span><span>Waverider</span><span>Venus</span><span>bvp4c</span></div>
+<a class="project-link" href="projects/aerogravity-assist.html">View project →</a>
+</div>
+</article>
+<article class="project-card">
+<a aria-label="Open SAE Aero Design project" class="project-preview aircraft-preview" href="projects/sae-aero-design.html">
+<img alt="SAE Aero Design RC cargo aircraft in flight" class="sae-project-photo" src="assets/images/sae-2018.jpg"/>
+</a>
+<div class="project-body">
+<div class="project-meta">AIRCRAFT DESIGN · SAE</div>
+<h3>SAE Aero Design Aircraft</h3>
+<p>Design, manufacturing and flight competition work spanning structures, aerodynamics, stability &amp; control, propulsion and team leadership.</p>
+<div class="tags"><span>Structures</span><span>Flight Dynamics</span><span>FEA</span><span>Manufacturing</span></div>
+<a class="project-link" href="projects/sae-aero-design.html">View project →</a>
+</div>
+</article>
+</div>
+<div class="carousel-status reveal"><span id="project-position">Projects 1–3 of 7</span></div>
+</section>
+<section class="section" id="experience">
+<div class="section-heading reveal"><p class="eyebrow">EXPERIENCE</p><h2>Engineering, teaching and hands-on technical work.</h2></div>
+<div class="timeline reveal">
+<div class="timeline-item"><div><span class="timeline-dot"></span></div><div class="timeline-content"><p class="timeline-date">AUG 2024 – MAY 2026</p><h3>Visiting Assistant Professor · Aerospace Engineering</h3><p>Embry-Riddle Aeronautical University · Florida, U.S.A.</p></div></div>
+<div class="timeline-item"><div><span class="timeline-dot"></span></div><div class="timeline-content"><p class="timeline-date">2022 – 2024</p><h3>M.S. Aeronautics &amp; Astronautics · Graduate Teaching Assistant</h3><p>Purdue University · West Lafayette, Indiana, U.S.A.</p></div></div>
+<div class="timeline-item"><div><span class="timeline-dot"></span></div><div class="timeline-content"><p class="timeline-date">2022</p><h3>Hardware-in-the-Loop Junior Engineer</h3><p>Ford Motor Company · Mexico City, Mexico</p></div></div>
+<div class="timeline-item"><div><span class="timeline-dot"></span></div><div class="timeline-content"><p class="timeline-date">2015 – 2021</p><h3>Lead Systems Engineer</h3><p>O&amp;F Integrated Specialized Engineering · Mexico City, Mexico</p></div></div>
+<div class="timeline-item"><div><span class="timeline-dot"></span></div><div class="timeline-content"><p class="timeline-date">2016 – 2021</p><h3>B.S. Mechanical &amp; Electrical Engineering</h3><p>Instituto Tecnológico y de Estudios Superiores de Monterrey · Mexico City, Mexico</p></div></div>
+</div>
+</section>
+<section class="section teaching-home" id="teaching">
+<div class="teaching-home-card reveal">
+<div>
+<p class="eyebrow">TEACHING</p>
+<h2>Topics taught in aerospace engineering.</h2>
+<p>Space Mechanics · Spacecraft Attitude Dynamics · Space Environmental Applications · <span class="no-wrap">Spacecraft Systems</span></p>
+</div>
+<a class="button secondary teaching-button" href="teaching.html">Explore Teaching →</a>
+</div>
+</section>
+<section class="section" id="certifications">
+<div class="section-heading reveal"><p class="eyebrow">CERTIFICATIONS</p><h2>Selected technical certifications.</h2></div>
+<div class="cert-list reveal"><span>ANSYS Fluent</span><span>ANSYS Structural</span><span>Guidance and Control of Hypersonic Vehicles · AIAA</span><span>Fundamentals of Atmospheric Entry · White Eagle Aerospace</span></div>
+</section>
+<section class="section contact-section" id="contact">
+<div class="contact-card reveal"><p class="eyebrow">CONTACT</p><h2>Interested in GNC, Flight Dynamics or aerospace engineering opportunities?</h2><p>Email will be added here later. For now, you can reach me through LinkedIn.</p><div class="contact-actions"><a class="button primary" href="https://www.linkedin.com/in/jose-ortiz-flores-11a485203" rel="noopener" target="_blank">LinkedIn</a><a class="button secondary" href="assets/CV_JOF_Aug_2026.pdf" rel="noopener" target="_blank">View CV</a></div></div>
+</section>
+</main>
+<footer><p>© <span id="year"></span> Jose Ortiz Flores · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
