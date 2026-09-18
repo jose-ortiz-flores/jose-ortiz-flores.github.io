@@ -9,3 +9,6 @@
 
 /* V5 visual updates */
 .result-card-wide{grid-column:1/-1}.result-card-wide img{height:auto;max-height:720px;object-fit:contain}.competition-badges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:30px 0 8px}.competition-badge{min-height:118px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(18,38,61,.96),rgba(7,17,29,.96));display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center}.competition-badge .badge-icon{grid-row:1/3;font-size:2rem}.competition-badge strong{font:700 1.28rem "Space Grotesk";color:#edf6ff}.competition-badge>span:last-child{color:var(--muted);font-size:.84rem;line-height:1.35}.hero-photo img{max-height:720px;object-position:center 35%}@media(max-width:760px){.competition-badges{grid-template-columns:1fr}.competition-badge{min-height:auto}.result-card-wide{grid-column:auto}}
+
+/* B-dot C++ project */
+.code-block{margin:24px 0;padding:22px;border:1px solid var(--line);border-radius:14px;background:#050c15;overflow:auto;color:#dce9f7;font:500 .86rem/1.65 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.code-link{padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:.86rem}.project-section code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
