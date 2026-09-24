@@ -1,1 +1,0 @@
-# Jose Ortiz Flores Portfolio 
