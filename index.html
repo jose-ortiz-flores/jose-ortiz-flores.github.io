@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet">
-</link></head>
+<link href="style.css" rel="stylesheet"/>
+</head>
 <body>
 <header class="site-header">
 <div aria-hidden="true" class="brand-spacer"></div>
@@ -38,7 +38,6 @@
 <a href="https://www.linkedin.com/in/jose-ortiz-flores-11a485203" rel="noopener" target="_blank">LinkedIn ↗</a>
 </div>
 </div>
-
 </section>
 <section class="section narrow" id="about">
 <div class="section-heading reveal">
@@ -62,19 +61,9 @@
 <button aria-label="Next projects" class="carousel-button" id="projects-next" type="button">→</button>
 </div>
 </div>
-<div aria-label="Selected projects" class="project-carousel reveal" id="project-carousel" tabindex="0">
+<div aria-label="Selected projects" class="project-carousel reveal" id="project-carousel" tabindex="0"><article class="project-card"><a aria-label="Open capsule aerothermodynamics project" class="project-preview capsule-preview" href="projects/genesis-reentry.html"><svg aria-label="Animated hypersonic flow around a reentry capsule" role="img" viewbox="0 0 600 360"><defs><lineargradient id="capsuleShield" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#e7f4ff"></stop><stop offset="1" stop-color="#5f819f"></stop></lineargradient><lineargradient id="capsuleShock"><stop offset="0" stop-color="#ffbc67" stop-opacity="0"></stop><stop offset=".55" stop-color="#ff914b" stop-opacity=".95"></stop><stop offset="1" stop-color="#ffcf75" stop-opacity=".15"></stop></lineargradient></defs><g class="capsule-flow"><path d="M-120 72 C95 72 150 92 236 130"></path><path d="M-120 115 C100 115 145 133 225 157"></path><path d="M-120 160 L212 174"></path><path d="M-120 206 L212 199"></path><path d="M-120 250 C100 250 145 234 225 215"></path><path d="M-120 292 C95 292 150 272 236 240"></path></g><path class="capsule-shock" d="M192 176 Q205 85 292 64 Q360 54 418 100" fill="none" stroke="url(#capsuleShock)" stroke-linecap="round" stroke-width="15"></path><path class="capsule-shock" d="M192 176 Q205 267 292 288 Q360 298 418 252" fill="none" stroke="url(#capsuleShock)" stroke-linecap="round" stroke-width="15"></path><path d="M225 176 Q230 117 308 111 L392 111 L392 241 L308 241 Q230 235 225 176Z" fill="url(#capsuleShield)" stroke="#cbe6ff" stroke-width="2"></path><path d="M225 176 Q230 117 308 111" fill="none" stroke="#ffbd78" stroke-width="5"></path><path d="M225 176 Q230 235 308 241" fill="none" stroke="#ffbd78" stroke-width="5"></path><text x="25" y="33">CAPSULE · HYPERSONIC FLOW</text><text x="24" y="335">ANALYTICAL HEATING  ↔  DSMC</text></svg></a><div class="project-body"><div class="project-meta">REENTRY · AEROTHERMODYNAMICS</div><h3>Capsule Aerothermodynamics</h3><p>Aerothermodynamics analysis of a reentry capsule. Comparison of analytical convective stagnation heating with high-fidelity DSMC simulation results.</p><div class="tags"><span>MATLAB</span><span>3DOF</span><span>OpenFOAM</span><span>DSMC</span></div><a class="project-link" href="projects/genesis-reentry.html">View project →</a></div></article>
 <article class="project-card">
-<a aria-label="Open B-dot spacecraft detumbling project" class="project-preview detumble-preview" href="projects/bdot-detumbling.html">
-<svg aria-label="Magnetic B-dot spacecraft detumbling" role="img" viewbox="0 0 600 360">
-<defs><radialgradient cx="50%" cy="35%" id="bdotEarthGlow" r="65%"><stop offset="0" stop-color="#3f8ac7"></stop><stop offset="1" stop-color="#102b45"></stop></radialgradient></defs>
-<circle cx="300" cy="410" fill="url(#bdotEarthGlow)" opacity=".92" r="210"></circle>
-<path d="M105 205 Q300 100 495 205" fill="none" stroke="currentColor" stroke-dasharray="6 8" stroke-opacity=".25"></path>
-<g class="detumble-sat"><rect class="sat-core" height="34" rx="3" width="48" x="-24" y="-17"></rect><rect class="sat-panel" height="20" width="58" x="-88" y="-10"></rect><rect class="sat-panel" height="20" width="58" x="30" y="-10"></rect></g>
-<path d="M255 125 C210 145 205 205 245 225" fill="none" stroke="#71b8ff" stroke-width="3" stroke-linecap="round"></path>
-<path d="M242 215 L245 225 L255 220" fill="none" stroke="#71b8ff" stroke-width="3"></path>
-<text x="28" y="34">B-DOT DETUMBLING · C++ / MATLAB</text>
-</svg>
-</a>
+<a aria-label="Open B-dot spacecraft detumbling project" class="project-preview bdot-orbit-preview" href="projects/bdot-detumbling.html"><svg aria-label="Satellite orbiting Earth and progressively detumbling" role="img" viewbox="0 0 600 360"><defs><radialgradient cx="35%" cy="28%" id="bdotNewEarth" r="70%"><stop stop-color="#53b5d4"></stop><stop offset=".43" stop-color="#246eaf"></stop><stop offset="1" stop-color="#09223d"></stop></radialgradient></defs><circle cx="300" cy="185" fill="url(#bdotNewEarth)" r="99"></circle><path d="M220 138 Q253 117 278 147 T337 147 Q370 161 369 194 Q326 173 297 208 Q261 195 234 222 Q211 183 220 138Z" fill="#5ac2b0" opacity=".45"></path><circle cx="300" cy="185" fill="none" opacity=".55" r="139" stroke="#80b9ee" stroke-dasharray="5 8" stroke-width="1.5"></circle><g class="bdot-orbit"><g class="bdot-orbit-body"><rect fill="#d8e9f7" height="34" rx="4" stroke="#82b8e5" stroke-width="2" width="46" x="-23" y="-17"></rect><rect fill="#245c91" height="26" stroke="#82b8e5" stroke-width="2" width="60" x="-88" y="-13"></rect><path d="M-67 -13V13M-48 -13V13" stroke="#82b8e5"></path><rect fill="#245c91" height="26" stroke="#82b8e5" stroke-width="2" width="60" x="28" y="-13"></rect><path d="M48 -13V13M67 -13V13" stroke="#82b8e5"></path></g></g><text x="25" y="34">B-DOT · MAGNETIC DETUMBLING</text><text x="25" y="338">ORBITAL MOTION  +  ANGULAR-RATE DECAY</text></svg></a>
 <div class="project-body"><div class="project-meta">AOCS · SOFTWARE INTEGRATION</div><h3>B-Dot Spacecraft Detumbling</h3><p>Bang-bang magnetic detumbling controller implemented in C++, built and tested under Linux, and integrated with a MATLAB spacecraft simulation.</p><div class="tags"><span>C++</span><span>MATLAB</span><span>Linux</span><span>MEX</span></div><a class="project-link" href="projects/bdot-detumbling.html">View project →</a></div>
 </article>
 <article class="project-card">
@@ -124,6 +113,7 @@
 <a class="project-link" href="projects/relative-navigation.html">View project →</a>
 </div>
 </article>
+
 <article class="project-card">
 <a aria-label="Open atmospheric reentry project" class="project-preview reentry-preview" href="projects/reentry-guidance.html">
 <svg aria-label="Blunt capsule entering heat-shield-first through the atmosphere with a glowing plasma wake" role="img" viewbox="0 0 600 360">
@@ -236,8 +226,8 @@
 </article>
 <article class="project-card">
 <a aria-label="Open SAE Aero Design project" class="project-preview aircraft-preview" href="projects/sae-aero-design.html">
-<img alt="SAE Aero Design RC cargo aircraft in flight" class="sae-project-photo" src="assets/images/sae-2018.jpg"/>
-</a>
+<img alt="SAE Aero Design RC cargo aircraft in flight" class="sae-project-photo" src="assets/images/sae-2018.jpg">
+</img></a>
 <div class="project-body">
 <div class="project-meta">AIRCRAFT DESIGN · SAE</div>
 <h3>SAE Aero Design Aircraft</h3>
